@@ -48,7 +48,7 @@ app.use((error, req, res, next) => {
 });
 
 mongoose
-    .connect('mongodb+srv://aredd127:Jobless123@cluster0.d6dtp92.mongodb.net/mern?retryWrites=true&w=majority')
+    .connect('mongodb+srv://<user>:<password>@cluster0.d6dtp92.mongodb.net/mern?retryWrites=true&w=majority')
     .then(() => {
         app.listen(5001);
     })
